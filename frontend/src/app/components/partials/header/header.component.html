@@ -1,0 +1,46 @@
+<header>
+    <div class="container">
+      <a routerLink="/" class="logo">NomNom</a>
+      <nav>
+        <ul>
+          <li>
+            <a routerLink="/home">Home</a>
+          </li>
+          <li>
+            <a routerLink="/about Us">About Us</a>
+          </li>
+          <li class="menu-container">
+            <a routerLink="/our products">Our Products</a>
+            <div class="menu">
+              <a routerLink="/Biscotti">Biscotti</a>
+              <a routerLink="/Crispy Cookies">Crispy Cookies</a>
+              <a routerLink="/Dried Fruits">Dried Fruits</a>
+              <a routerLink="/Dried Vegetables">Dried Vegetables</a>
+              <a routerLink="/Nuts and Granola">Nuts and Granola</a>
+              <a routerLink="/Plant-based Butter">Plant-based Butter</a>
+            </div>
+          </li>
+          <li>
+            <a routerLink="/blog">Blog</a>
+          </li>
+          <li *ngIf="!isAuth">
+            <a routerLink="/login">Login</a>
+          </li>
+          <li *ngIf="isAuth" class="menu-container">
+            <a routerLink="/dashboard">{{user.name}}</a>
+            <div class="menu">
+              <a routerLink="/profile">Profile</a>
+              <a routerLink="/orders">Orders</a>
+              <a (click)="logout()">Logout</a>
+            </div>
+          </li>
+          <li>
+        <li>
+          <a routerLink="/cart-page">
+            Cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
