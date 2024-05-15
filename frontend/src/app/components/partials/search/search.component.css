@@ -7,7 +7,7 @@ div{
   
   input{
     border-radius: 10rem 0 0 10rem;
-    border: none;
+    border-color: black;
     height: 3rem;
     width: 20rem;
     background-color: #f1f1f1;
