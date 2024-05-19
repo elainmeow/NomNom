@@ -1,67 +1,78 @@
-header{
-    position: relative;
-    background: white;
-    padding: 0;
-    border-bottom: 1px solid #ebf0e4;
-  }
-  
-  a{
-    color: #233000;
-  }
-  
-  a:hover{
-    background:#5E6600;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .container{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  a.logo{
-    font-weight: bold;
-    padding: 1rem;
-  }
-  
-  ul{
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-  }
-  
-  ul a{
-    padding: 1rem;
-    display: inline-block;
-  }
-  
-  a span{
-    background: #ebf0e4;
-    color: rgb(0, 121, 2);
-    padding: 0.1rem 0.45rem;
-    border-radius: 100rem;
-    font-size:0.9rem;
-  }
-  
-  .menu-container{
-    position: relative;
-  }
-  
-  .menu{
-    position:absolute;
-    z-index:1;
-    background:whitesmoke;
-    display: none;
-  }
-  
-  .menu-container:hover .menu{
-    display: block;
-  }
-  
-  .menu a{
-    width: 100%;
-    min-width:8rem;
-  }
-  
+header {
+  position: relative;
+  background: white;
+  padding: 0.5rem; /* Tăng kích thước của header */
+  border-radius: 1rem; /* Làm tròn header */
+}
+
+a {
+  color: #233000;
+  border-radius: 1rem;
+}
+
+a:hover {
+  background: #5e6600;
+  color: white;
+  cursor: pointer;
+}
+.our-products img {
+  width: 15px; /* Đặt chiều rộng mong muốn */
+  height: 15px; /* Đặt chiều cao mong muốn */
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+a.logo {
+  font-weight: bold;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  border-radius: 1rem; /* Tạo khối bo góc */
+  background-color: #5E6600; /* Tô background màu xanh lá */
+  padding: 0.5rem; /* Thêm padding để tạo khoảng cách giữa các mục */
+}
+
+ul a {
+  padding: 1rem;
+  display: inline-block;
+  color: white; /* Đổi màu chữ thành trắng */
+  border-radius: 1rem;
+}
+
+a span {
+  background: #ebf0e4;
+  color: rgb(0, 121, 2);
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size: 0.9rem;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  background: #5E6600;
+  border-radius: 1rem;
+  display: none;
+}
+
+.menu-container:hover .menu {
+  display: block;
+  background-color: #5c1919;
+  color: white;
+}
+
+.menu a {
+  width: 100%;
+  min-width: 8rem;
+}

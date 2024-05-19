@@ -1,16 +1,15 @@
 div{
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-top: 0.7rem;
   }
   
   input{
     border-radius: 10rem 0 0 10rem;
-    border-color: black;
+    border-color: #5e6600;
     height: 3rem;
     width: 20rem;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     padding: 1.2rem;
     font-size: 1.1rem;
     font-weight: 500;
@@ -24,7 +23,7 @@ div{
     font-size: 1rem;
     border-radius: 0 10rem 10rem 0;
     border: none;
-    background-color: #e72929;
+    background-color: #5e6600;
     color: white;
     opacity: 0.8;
     outline: none;

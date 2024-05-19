@@ -1,0 +1,31 @@
+<app-video></app-video>
+<app-best-sellers></app-best-sellers>
+<div class="slider">
+    <div class="list">
+        <div class="item" *ngFor="let item of items; let i = index" 
+             [class.active]="i === itemActive" 
+             (click)="goToSlide(i)">
+            <img [src]="'/assets/img' + (i + 1) + '.png'">
+            <div class="content">
+                <p>Category</p>
+                <h2 style="font-size: 45px;">{{ sliderNames[i] }}</h2>
+                <p style="font-size: 20px; font-weight: 100;">{{ slogans[i] }}</p>
+                <p style="font-style: italic; font-size: 15px; margin-top: -15px;">{{ descriptions[i] }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="arrows">
+        <button id="prev" (click)="prevSlide()"><</button>
+        <button id="next" (click)="nextSlide()">></button>
+    </div>
+    <div class="thumbnail">
+        <div class="item" *ngFor="let item of items; let i = index" 
+             [class.active]="i === itemActive" 
+             (click)="goToSlide(i)">
+            <img [src]="'/assets/img' + (i + 1) + '.png'">
+            <div class="content">{{ sliderNames[i] }}</div>
+        </div>
+    </div>  
+</div>
+<app-services></app-services>
+<app-footer></app-footer>

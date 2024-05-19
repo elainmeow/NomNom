@@ -1,0 +1,219 @@
+.bg-color{
+    background: #eee;
+    padding: 60px 0;
+}
+.containers{
+    width: 90%;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: space-between; /* Dàn trải đều các cột */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    flex-wrap: wrap; /* Đảm bảo các cột vẫn sẽ xuống dòng khi không đủ không gian */
+}
+.col-md-4 {
+  flex: 1; /* Đảm bảo các cột có chiều rộng bằng nhau */
+  max-width: 20%; /* Đảm bảo mỗi cột chiếm tối đa 30% chiều rộng */
+  box-sizing: border-box; /* Đảm bảo padding và border không ảnh hưởng tới kích thước */
+}
+.title{
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+.title::before{
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: #5E6600;
+    opacity: .6;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title::after{
+    content: '\f005';
+    font-family: FontAwesome;
+    color: #dbdbdb;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background: #eee;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+.title p{
+    color: #999;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0;
+}
+.title h1{
+    font-size: 44px;
+    color: #5E6600;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.title h1 span{
+    color: #233000;
+}
+
+.card{
+    transition: all .2s ease-in-out;
+    border-radius: 3px;
+}
+.card-main{
+    position: relative;
+}
+.favorite{
+    position: absolute;
+    background: #5E6600;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
+    height: 30px;
+    width: 45px;
+    border-radius: 0 15px 15px 0;
+    line-height: 30px;
+    font-style: italic;
+    left: -9px;
+    top: 30px;
+}
+.favorite::after{
+    border-top: 6px solid #233000;
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    border-left: 8px solid transparent;
+    border-right: 0px solid transparent;
+}
+.label{
+    position: absolute;
+    bottom: 84px;
+    left: 10px;
+    font-style: 10px;
+    font-weight: 400;
+    text-transform: initial;
+    z-index: 2;
+    line-height: 100%;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 8px;
+}
+.label-green{
+    background: #5E6600;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.cart-line{
+    height: 2px;
+    background: #f1f1f1;
+}
+.cart-item{
+    text-align: center;
+    line-height: 45px;
+    background: #111;
+    transition: all 1s ease-in-out;
+    position: relative;
+    top: -30px;
+    opacity: 0;
+}
+.cart-item ul {
+    padding: 0;
+    margin: 0;
+}
+.cart-item ul li{
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+.cart-item ul li::after{
+    content: '';
+    width: 1px;
+    height: 18px;
+    background: rgba(255, 255, 255, .15);
+    position: absolute;
+    left: -2px;
+    top: 10px;
+}
+.cart-item ul li:first-child:after{
+    display: none;
+}
+.cart-item ul li a{
+    padding: 0 18px;
+    color: #ccc;
+}
+.cart-item ul li a:hover{
+    color: #5E6600;
+}
+.card:hover .cart-item{
+    opacity: 1;
+}
+.product-container{
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    z-index: 4;
+    transition: 0.5s;
+    opacity: 0;
+}
+.p{
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 2px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+.p img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.p img:hover{
+    opacity: 1;
+}
+.card:hover .product-container{
+    opacity: 1;
+    right: 10px;
+}
+.content{
+    padding: 16px 0;
+    text-align: center;
+}
+.content a{
+    font-size: 16px;
+    color: #233000;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+.content a:hover{
+    color: #5E6600;
+    text-decoration: none;   
+}
+.rating i{
+    color: #5E6600;
+    line-height: 22px;
+    margin: 0 2px;
+    font-size: 12px;
+}
+.content p{
+    margin-bottom: 0;
+}
+.content .price{
+    font-size: 18px;
+    color: red;
+    font-weight: 700;
+    margin-right: 6px;
+}

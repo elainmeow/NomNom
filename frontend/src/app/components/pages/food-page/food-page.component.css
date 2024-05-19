@@ -73,7 +73,7 @@
     margin: 0.2rem 0.15rem;
     border-radius: 10rem;
     font-weight: 600;
-    color: blue;
+    color: #5E6600;
   }
   
   .cook-time{
@@ -99,7 +99,7 @@
   
   button{
     color: white;
-    background: #e72929;
+    background: #5E6600;
     border: none;
     font-size: 1.2rem;
     padding: 1rem;

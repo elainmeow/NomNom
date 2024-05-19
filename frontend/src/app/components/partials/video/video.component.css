@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.slogan{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    margin-bottom: -70px;
+    color: #233000 ;
+    -webkit-text-stroke: 0.25px #5E6600;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+.brandname{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 150px;
+    color: #EBF0E4 ;
+    animation: fadeOut 1s ease-in-out forwards;
+}
+.slogan-nomnom {
+    position: relative;
+    z-index: -1;
+}
+.content h1{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 15px;
+    color: #233000;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Lilita One', sans-serif;
+    letter-spacing: 2px;
+}
+button:hover{
+    background: #233000;
+    transition: 0.5s;
+}
+button:hover{
+    color: #EBF0E4 ;
+}
+.banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}  
+@keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}  
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+}

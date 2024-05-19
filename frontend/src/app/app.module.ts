@@ -25,8 +25,18 @@ import { LoadingComponent } from './components/partials/loading/loading.componen
 import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
 import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
 import { OrderItemsListComponent } from './components/partials/order-items-list/order-items-list.component';
-import { MapComponent } from './components/partials/map/map.component';
+import { FooterComponent } from './components/partials/footer/footer.component'
+import { SliderHomepageComponent } from './components/pages/slider-homepage/slider-homepage.component';
+import { VideoComponent } from './components/partials/video/video.component';
+import { ServicesComponent } from './components/partials/services/services.component';
+import { OrderCompleteComponent } from './components/pages/order-complete/order-complete.component';
+import { AuthInterceptor } from './auth/auth.interceptor';
 import { PaymentPageComponent } from './components/pages/payment-page/payment-page.component';
+import { AboutNomnomComponent } from './components/pages/about-nomnom/about-nomnom.component';
+import { BestSellersComponent } from './components/partials/best-sellers/best-sellers.component';
+import { ServiceTermComponent } from './components/pages/service-term/service-term.component';
+import { PaymentTermComponent } from './components/pages/payment-term/payment-term.component';
+import { ExchangeReturnTermComponent } from './components/pages/exchange-return-term/exchange-return-term.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,8 +58,17 @@ import { PaymentPageComponent } from './components/pages/payment-page/payment-pa
     LoadingComponent,
     CheckoutPageComponent,
     OrderItemsListComponent,
-    MapComponent,
-    PaymentPageComponent
+    PaymentPageComponent,
+    FooterComponent,
+    SliderHomepageComponent,
+    VideoComponent,
+    ServicesComponent,
+    OrderCompleteComponent,
+    AboutNomnomComponent,
+    BestSellersComponent,
+    ServiceTermComponent,
+    PaymentTermComponent,
+    ExchangeReturnTermComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +83,7 @@ import { PaymentPageComponent } from './components/pages/payment-page/payment-pa
     })
   ],
   providers: [
+    {provide:HTTP_INTERCEPTORS, useClass:AuthInterceptor, multi: true },
     {provide:HTTP_INTERCEPTORS, useClass:LoadingInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]

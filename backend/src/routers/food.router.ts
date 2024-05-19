@@ -74,6 +74,13 @@ router.get(
     res.send(foods);
   })
 );
+router.get(
+  '/category/:category',
+  asyncHandler(async (req, res) => {
+    const foods = await FoodModel.find({ category: req.params.category });
+    res.send(foods);
+  })
+);
 
 router.get(
   '/:foodId',

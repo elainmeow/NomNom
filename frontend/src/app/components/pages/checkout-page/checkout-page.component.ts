@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CartService } from '../../../services/cart.service';
 import { UserService } from '../../../services/user.service';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-checkout-page',
@@ -16,7 +17,8 @@ export class CheckoutPageComponent implements OnInit {
   constructor(cartService:CartService,
               private formBuilder: FormBuilder,
               private userService: UserService,
-              private toastrService: ToastrService) {
+              private toastrService: ToastrService,
+              private router: Router) {
                 const cart = cartService.getCart();
                 this.order.items = cart.items;
                 this.order.totalPrice = cart.totalPrice;
@@ -44,5 +46,6 @@ export class CheckoutPageComponent implements OnInit {
     this.order.address = this.fc.address.value;
 
     console.log(this.order);
+    this.router.navigate(['/payment']);
   }
 }

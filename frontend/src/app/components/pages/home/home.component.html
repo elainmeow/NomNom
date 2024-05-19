@@ -1,4 +1,4 @@
-<app-search></app-search>
+
 <app-tags></app-tags>
 <app-not-found
 [visible]="!foods || !foods.length"
@@ -25,18 +25,17 @@ resetLinkText="Reset Search">
             </span>
           </div>
 
-          <div class="cook-time">
-            <span>🕒</span>
-            {{food.cookTime}}
-          </div>
+          
         </div>
 
         <div class="price">
-          <span>
-            {{food.price | currency}}
+          <span><b>
+            {{food.price | currency:'VND'}}
+          </b>
           </span>
         </div>
       </div>
     </a>
   </li>
 </ul>
+<app-footer></app-footer>

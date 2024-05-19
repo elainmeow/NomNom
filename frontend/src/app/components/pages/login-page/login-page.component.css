@@ -1,11 +1,36 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-top: 3rem;
-    }
-    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: #233000 ;
+  background-image: url(image/bg_signup.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  background-color: #5E6600;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  width: 90%; /* Adjust width as needed */
+  max-width: 768px; /* Adjust maximum width as needed */
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
     .details{
       width: 28rem;
     }
@@ -24,4 +49,5 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      color: white
     }

@@ -26,7 +26,7 @@ resetLinkText="Go To Homepage"
         </select>
         </div>
         <div>
-          {{cartItem.price | currency}}
+          {{cartItem.price | currency:'VND'}}
         </div>
     
         <div>
@@ -39,7 +39,7 @@ resetLinkText="Go To Homepage"
     <div class="checkout">
       <div>
         <div class="foods-count">{{cart.totalCount}}</div>
-        <div class="total-price">{{cart.totalPrice|currency}}</div>
+        <div class="total-price">{{cart.totalPrice|currency:'VND'}}</div>
       </div>
     
       <a routerLink="/checkout">Proceed to Checkout</a>
