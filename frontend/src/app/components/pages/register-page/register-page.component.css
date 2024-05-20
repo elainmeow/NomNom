@@ -8,7 +8,7 @@
 }
 
 body{
-  background-color: #233000 ;
+  background-color: #233000;
   background-image: url(image/bg_signup.jpg);
   display: flex;
   align-items: center;
@@ -18,26 +18,46 @@ body{
 }
 
 .container {
-  background-color: #EBF0E4;
+  background-color: rgba(35, 48, 0, 0.8); /* Adjusted for transparency */
   border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 5px 15px rgb(255, 255, 255);
   position: relative;
   overflow: hidden;
-  width: 90%; /* Adjust width as needed */
-  max-width: 768px; /* Adjust maximum width as needed */
-  min-height: 480px;
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Adjust maximum width as needed */
+  min-height: 400px; /* Adjust minimum height as needed */
+  padding: 20px; /* Add padding for inner content spacing */
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.details {
-  width: 100%; /* Adjust width as needed */
-  max-width: 25rem; /* Adjust maximum width as needed */
-}
-
-.login {
-  margin-bottom: 20px; /* Adjust margin as needed */
+.login-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 20px; /* Để tạo khoảng cách giữa nút Register và phần Already a user */
+}
+
+
+.details {
+  width: 100%; /* Adjusted to fit container */
+  max-width: 25rem; /* Adjust max width for inner content */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-list {
+  color: red;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }

@@ -1,0 +1,68 @@
+h1 {
+  align-items: center;
+  align-content: center;
+  margin-top: -40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #233000;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.86); /* Màu trong suốt với alpha = 0.86 */
+  align-items: center;
+  width: 100%; /* Độ rộng container */
+  max-width: 800px; /* Độ rộng tối đa của container */
+  margin: 1rem auto 6rem auto; /* Căn giữa container theo trục ngang và thêm margin trên và dưới */
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 10px #919780;
+  margin-top: 3rem; 
+}
+
+.content {
+  width: 35rem;
+  margin: 10px auto; /* Thay đổi từ margin-left và margin-right thành margin auto để căn giữa */
+}
+
+.content, form {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+}
+
+.buttons-container {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  margin: 2rem;
+  width: 35rem;
+}
+
+button {
+  color: #f5ffd9;
+  background-color: #233000;
+  width: 100%;
+  height: 3rem;
+  opacity: 0.8;
+  font-size: 1.3rem;
+  border: none;
+  margin-left: -2px;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #233000;
+  font-weight: 900;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+}

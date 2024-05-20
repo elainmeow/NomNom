@@ -9,14 +9,18 @@ import { FoodService } from '../../../services/food.service';
   styleUrls: ['./tags.component.css']
 })
 export class TagsComponent implements OnInit {
-  tags?:Tag[];
-  constructor(foodService:FoodService) {
-    foodService.getAllTags().subscribe(serverTags => {
-      this.tags = serverTags;
-    });
-   }
+  tags?: Tag[];
+  activeTagIndex: number = -1; // Initialize as -1 to indicate no active tag
+
+  constructor(private foodService: FoodService) { }
 
   ngOnInit(): void {
+    this.foodService.getAllTags().subscribe(serverTags => {
+      this.tags = serverTags;
+    });
   }
 
+  setActiveTag(index: number) {
+    this.activeTagIndex = index;
+  }
 }

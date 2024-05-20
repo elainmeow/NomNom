@@ -9,20 +9,22 @@ import { AbstractControl, FormControl } from '@angular/forms';
 
 export class TextInputComponent implements OnInit {
   @Input()
-  control!:AbstractControl;
+  control!: AbstractControl;
   @Input()
-  showErrorsWhen:boolean = true;
+  showErrorsWhen: boolean = true;
   @Input()
   label!: string;
   @Input()
   type: 'text' | 'password' | 'email' = 'text';
-  
-  get formControl(){
+  @Input()
+  readonly: boolean = false; // Added readonly input
+
+  get formControl() {
     return this.control as FormControl;
   }
-    constructor() { }
-  
-    ngOnInit(): void {
-    }
-  
+
+  constructor() { }
+
+  ngOnInit(): void {
   }
+}

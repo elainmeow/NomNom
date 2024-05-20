@@ -1,3 +1,4 @@
+
 ul{
     display: flex;
     justify-content: center;
@@ -5,13 +6,13 @@ ul{
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
-    background-color: #EBF0E4;
+    background-color: #ffffff;
   }
   
   li a{
     height: 22.5rem;
     width: 20rem;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 1rem;
     margin: 0.5rem;
     display: flex;
@@ -64,7 +65,7 @@ ul{
   
   .origins span{
     border-radius: 2rem;
-    background-color: #EBF0E4;
+    background-color: #ffffff;
     display: inline-block;
     font-size: 0.8rem;
     color: grey;
@@ -73,19 +74,13 @@ ul{
     margin-top: 0.2rem;
   }
   
-  .cook-time{
-    font-size: 0.9rem;
-    flex: 3;
-    text-align: right;
-  }
-  
   .price{
     position: absolute;
     bottom: 0;
     left: 0.9rem;
-    background: #EBF0E4;
+    background: #ffffff;
     padding: 0.3rem 100% 0 0;
-    color: #414141;
+    color: #233000;
     margin-top: 0.7rem;
     font-size: 1.1rem;
   }

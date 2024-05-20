@@ -35,7 +35,7 @@ ul {
   list-style-type: none;
   margin: 0;
   border-radius: 1rem; /* Tạo khối bo góc */
-  background-color: #5E6600; /* Tô background màu xanh lá */
+  background-color: #233000; /* Tô background màu xanh lá */
   padding: 0.5rem; /* Thêm padding để tạo khoảng cách giữa các mục */
 }
 
@@ -61,7 +61,7 @@ a span {
 .menu {
   position: absolute;
   z-index: 1;
-  background: #5E6600;
+  background: #233000;
   border-radius: 1rem;
   display: none;
 }

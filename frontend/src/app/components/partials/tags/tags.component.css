@@ -1,18 +1,19 @@
 div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  div a {
-    background-color: #f0f0f0;
-    padding: 0.3rem 1rem;
-    margin: 0.2rem 0.15rem;
-    border-radius: 10rem;
-    font-weight: 600;
-    color: #233000;
-  }
-  
-  a .active {
-    background-color: red;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+div a {
+  background-color: #bababa;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10rem;
+  font-weight: 600;
+  color: #233000;
+}
+
+div a.active {
+  background-color: #233000;
+  color: white; /* Change text color when active */
+}

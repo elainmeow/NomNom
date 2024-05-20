@@ -7,8 +7,9 @@ import auth from '../middlewares/auth.mid';
 const router = Router();
 router.use(auth);
 
-router.post('/create', asyncHander(async (req:any, res:any) => {
+router.post('/create', auth , asyncHander(async (req:any, res:any) => {
     const requestOrder = req.body;
+    console.log(req.user);
 
     if(requestOrder.items.length <= 0){
         res.status(HTTP_BAD_REQUEST).send('Cart Is Empty!');
@@ -22,6 +23,7 @@ router.post('/create', asyncHander(async (req:any, res:any) => {
 
     const newOrder = new OrderModel({...requestOrder,user: req.user.id});
     await newOrder.save();
+    console.log(newOrder);
     res.send(newOrder);
 }));
 

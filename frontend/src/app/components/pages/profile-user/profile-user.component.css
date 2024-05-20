@@ -1,0 +1,126 @@
+/* Style for the container */
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+h4 {
+    font-weight: bold;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Style for the user profile section */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+/* Style for the profile picture and upload button */
+.media {
+    display: flex;
+    align-items: center;
+}
+
+
+.media img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+.btn-outline-primary {
+    color: #fff ;
+    border-color: #fff ;
+}
+
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #4e5b2b;
+    border-color: #4e5b2b;
+}
+
+
+/* Style for form labels and inputs */
+.form-label {
+    font-weight: bold;
+}
+
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Style for the warning alert */
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+.alert-warning a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+
+.alert-warning a:hover {
+    text-decoration: underline;
+}
+
+
+/* Style for buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    background-color: #5E6600 ;
+    border-color: #5E6600 ;
+    color: #fff;
+    align-items: center;
+}
+
+
+.btn-primary:hover {
+    background-color: #8d9a00 ;
+    border-color: #8d9a00 ;
+}
+
+
+.btn-default {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #233000;
+}
+
+
+.btn-default:hover {
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+
+
+

@@ -1,6 +1,8 @@
 <div *ngIf="tags">
-    <a
-      *ngFor="let tag of tags" routerLink="/tag/{{ tag.name }}">
-      {{ tag.name }}({{ tag.count }})
-    </a>
-  </div>
+  <a *ngFor="let tag of tags; let i = index" 
+     [routerLink]="['/tag', tag.name]"
+     [ngClass]="{'active': i === activeTagIndex}"
+     (click)="setActiveTag(i)">
+    {{ tag.name }} ({{ tag.count }})
+  </a>
+</div>

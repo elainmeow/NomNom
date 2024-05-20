@@ -89,7 +89,7 @@
   .price{
     font-size: 1.8rem;
     margin: 2rem 2rem 2rem 0;
-    color: green;
+    color: #233000;
   }
   
   .price::before{

@@ -4,9 +4,9 @@ div{
     margin-top: 0.7rem;
   }
   
-  input{
+  input {
     border-radius: 10rem 0 0 10rem;
-    border-color: #5e6600;
+    border: 1px solid #233000; /* Thêm màu border */
     height: 3rem;
     width: 20rem;
     background-color: #ffffff;
@@ -14,22 +14,22 @@ div{
     font-size: 1.1rem;
     font-weight: 500;
     outline: none;
-  }
-  
-  div button{
-    color: grey;
+}
+
+div button {
+    color: #233000;
     height: 3rem;
     width: 5rem;
     font-size: 1rem;
     border-radius: 0 10rem 10rem 0;
-    border: none;
-    background-color: #5e6600;
+    border: 1px solid #233000; /* Thêm màu border */
+    background-color: #233000;
     color: white;
     opacity: 0.8;
     outline: none;
-  }
-  
-  div button:hover{
+}
+
+div button:hover {
     opacity: 1;
     cursor: pointer;
-  }
+}

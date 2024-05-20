@@ -37,6 +37,8 @@ import { BestSellersComponent } from './components/partials/best-sellers/best-se
 import { ServiceTermComponent } from './components/pages/service-term/service-term.component';
 import { PaymentTermComponent } from './components/pages/payment-term/payment-term.component';
 import { ExchangeReturnTermComponent } from './components/pages/exchange-return-term/exchange-return-term.component';
+import { FAQComponent } from './components/pages/faq/faq.component';
+import { ProfileUserComponent } from './components/pages/profile-user/profile-user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +70,9 @@ import { ExchangeReturnTermComponent } from './components/pages/exchange-return-
     BestSellersComponent,
     ServiceTermComponent,
     PaymentTermComponent,
-    ExchangeReturnTermComponent
+    ExchangeReturnTermComponent,
+    FAQComponent,
+    ProfileUserComponent
   ],
   imports: [
     BrowserModule,

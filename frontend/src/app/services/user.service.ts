@@ -3,7 +3,7 @@ import { User } from '../shared/models/User';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { IUserLogin } from '../shared/interfaces/IUserLogin';
 import { HttpClient } from '@angular/common/http';
-import { USER_LOGIN_URL, USER_REGISTER_URL } from '../shared/constants/urls';
+import { USER_LOGIN_URL, USER_REGISTER_URL, USER_UPDATE_URL } from '../shared/constants/urls';
 import { ToastrService } from 'ngx-toastr';
 import { IUserRegister } from '../shared/interfaces/IUserRegister';
 
@@ -13,6 +13,11 @@ const USER_KEY = 'User';
 })
 
 export class UserService {
+  updateUsers(id: string, userData: any): Observable<any> {
+ 
+    return this.http.put<any>(USER_UPDATE_URL + id, userData);
+  }
+
   private userSubject = new BehaviorSubject<User>(this.getUserFromLocalStorage());
   public userObservable:Observable<User>;
   constructor(private http:HttpClient, private toastrService:ToastrService) {

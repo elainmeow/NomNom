@@ -14,6 +14,8 @@ import { AboutNomnomComponent } from './components/pages/about-nomnom/about-nomn
 import { ServiceTermComponent } from './components/pages/service-term/service-term.component';
 import { PaymentTermComponent } from './components/pages/payment-term/payment-term.component';
 import { ExchangeReturnTermComponent } from './components/pages/exchange-return-term/exchange-return-term.component';
+import { FAQComponent } from './components/pages/faq/faq.component';
+import { ProfileUserComponent } from './components/pages/profile-user/profile-user.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -25,9 +27,11 @@ const routes: Routes = [
   {path:'cart-page', component: CartPageComponent},
   {path:'service-term', component: ServiceTermComponent},
   {path:'exchange-term', component: ExchangeReturnTermComponent},
+  {path:'faq', component: FAQComponent},
   {path:'slider-homepage', component: SliderHomepageComponent},
   {path:'login', component: LoginPageComponent},
   {path:'register', component: RegisterPageComponent},
+  {path:'profile-user', component: ProfileUserComponent},
   {path:'payment-term', component: PaymentTermComponent},
   {path: 'checkout', component: CheckoutPageComponent, canActivate: [authGuard] },
   {path: 'payment', component: PaymentPageComponent, canActivate: [authGuard] },
